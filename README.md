@@ -1,6 +1,6 @@
 # Stablecoin
 
-Frontend for the app. A mobile app (Expo + React Native + TypeScript) for sending USDC on the Base Sepolia testnet from a connected wallet.
+This is the first prototype for the frontend
 
 ## What you need
 
@@ -70,9 +70,3 @@ npx expo lint       # lint
 npx expo-doctor     # check dependencies and config
 ```
 
-## Troubleshooting
-
-- **Windows: "running scripts is disabled on this system".** Use `npx.cmd` in place of `npx` (for example `npx.cmd expo start --tunnel`), or run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once.
-- **"Port 8081 is being used".** Another dev server is already running. Close it, or accept the prompt to use a different port.
-- **Expo Go says to sign in to the Expo CLI.** Run `npx expo login` with the same account you use in Expo Go, then restart the dev server.
-- **The app doesn't come back after approving in MetaMask.** Switch back to Expo Go yourself; the app picks up the result.
