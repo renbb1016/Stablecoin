@@ -63,11 +63,4 @@ The first load takes about a minute. After you edit code, the app reloads automa
 5. Tap **Confirm & send** and approve the transaction in MetaMask.
 6. Switch back to the app. It shows the pending state, then **Sent!**, with a link to the transaction on BaseScan.
 
-## Code checks
-
-```bash
-npx tsc --noEmit    # type check
-npx expo lint       # lint
-npx expo-doctor     # check dependencies and config
-```
 
