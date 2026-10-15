@@ -28,8 +28,8 @@ export function validateAmount({
   const fraction = amt.split('.')[1] ?? '';
   if (fraction.length > decimals) return { ok: false, error: `Max ${decimals} decimal places.` };
 
+  // $0 transfers are allowed: they're valid ERC-20 transfers and handy for testing.
   const value = parseUnits(amt, decimals);
-  if (value <= 0n) return { ok: false, error: 'Amount must be greater than 0.' };
   if (balance !== undefined && value > balance) return { ok: false, error: 'Insufficient balance.' };
   if (gasBalance !== undefined && gasBalance === 0n) {
     return { ok: false, error: 'You need some testnet ETH to pay for gas.' };
