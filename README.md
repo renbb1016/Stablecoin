@@ -1,6 +1,6 @@
 # Stablecoin
 
-This is the first prototype for the frontend
+Frontend test
 
 ## What you need
 
