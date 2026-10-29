@@ -31,7 +31,7 @@ npx expo login
 ## 3. Start the dev server
 
 ```bash
-cd C:\Users\Renbb\OneDrive\Blockchain_Stablecoin\stablecoin-send
+cd C:\Users\Renbb\OneDrive\Workspaces\General\Blockchain-Stablecoin\stablecoin-send
 npx expo start --tunnel
 ```
 
